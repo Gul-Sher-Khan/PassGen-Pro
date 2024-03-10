@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-container {
+    @apply isolate w-96 rounded-xl bg-gray-50/50 shadow-lg ring-1 ring-black/5 flex justify-center p-4 dark:bg-purple-2/95 dark:text-white;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="range"]::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: #6f42c1;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
